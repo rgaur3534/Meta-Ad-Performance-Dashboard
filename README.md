@@ -18,123 +18,150 @@
 
 <hr>
 
-🚀 Project Overview
-This project presents a Power BI dashboard designed to analyze and optimize Meta (Facebook & Instagram) advertising performance.
-The dashboard provides a full-funnel view — from awareness → engagement → conversion — enabling data-driven decisions around targeting, budgeting, and campaign optimization.
-It simulates a real-world marketing analytics scenario, closely aligned with how Meta Ads data is structured and analyzed in industry environments.
+## 🚀 Project Overview
+This project features a **Power BI dashboard** built to analyze **Meta (Facebook & Instagram) advertising performance** across the entire marketing funnel — from **impressions and engagement to conversions and purchases**.
 
-🎯 Objectives
-· Evaluate ad campaign effectiveness using key performance indicators (KPIs)
-· Identify funnel drop-offs from impressions to purchases
-· Analyze audience demographics and geographic performance
-· Discover optimal ad formats, timing, and budget allocation strategies
-· Provide actionable insights to improve ROI
+The dashboard is designed to mirror **real-world marketing analytics workflows**, enabling stakeholders to evaluate campaign effectiveness, optimize ad spend, and improve ROI using data-driven insights.
 
-📌 Key KPIs Tracked
+---
 
-Metric                                                        	Description
-Impressions	                                             Total times ads were shown
-Clicks                                                 	 Number of ad clicks
-Engagements                                              Clicks, likes, shares, comments
-CTR	                                                     Click-through rate
-Engagement Rate	                                         Engagements ÷ impressions
-Purchases                                                Conversions generated
-Conversion                                               Rate	Purchases ÷ clicks
-Purchase Rate	                                           Purchases ÷ impressions
-Total Budget	                                           Total ad spend
-Avg Budget per Campaign	                                 Spend efficiency
+## 🎯 Objectives
+- Track and analyze full-funnel marketing KPIs
+- Identify performance drop-offs between engagement and conversion
+- Understand audience behavior using demographic and geographic insights
+- Evaluate ad formats and time-based performance
+- Provide actionable recommendations for campaign optimization
 
-📈 High-Level Performance Summary
-· 216K Impressions → Strong reach
-· 25.4K Clicks → CTR: 11.76% (well above industry average)
-· 29K Engagements → Engagement Rate: 13.56%
-· 1.3K Purchases → Conversion Rate: 5.21%, Purchase Rate: 0.61%
+---
 
-🔍 Insight:
-Ads perform exceptionally well at awareness and engagement, but there is a significant drop-off at the purchase stage, indicating funnel leakage.
+## 📌 Key KPIs Tracked
+- Impressions  
+- Clicks  
+- Engagements (likes, shares, comments)  
+- Click-Through Rate (CTR)  
+- Engagement Rate  
+- Purchases (Conversions)  
+- Conversion Rate  
+- Purchase Rate  
+- Total Budget & Average Campaign Spend  
 
-👥 Audience Insights
-🔹 Gender
-· Female: 43%
-· Male: 22%
-· Other / Not specified: 35%
-👉 Females show significantly higher engagement.
+---
 
-🔹 Age Group
-· Peak engagement: 18–30 years
-· Sharp decline after 35+
-👉 Core audience = Young adults, especially females aged 18–30.
+## 📈 Performance Summary
+- **216K Impressions** generating strong visibility  
+- **25.4K Clicks** with a **CTR of 11.76%** (above industry average)  
+- **29K Engagements** with a **13.56% engagement rate**  
+- **1.3K Purchases**, indicating funnel leakage at the conversion stage  
 
-🌍 Geographic Analysis
+**Insight:**  
+Ads are highly effective at driving awareness and engagement, but purchase efficiency is low — highlighting the need for better landing pages, retargeting, and offer optimization.
+
+---
+
+## 👥 Audience Insights
+
+### Gender Distribution
+- Female: **43%**
+- Male: **22%**
+- Other / Not specified: **35%**
+
+Female users show significantly higher engagement levels.
+
+### Age Group Analysis
+- Highest engagement: **18–30 years**
+- Engagement drops sharply beyond **35+**
+
+**Core audience:** Young adults, especially females aged 18–30.
+
+---
+
+## 🌍 Geographic Insights
 Top engaged countries:
-· India
-· Brazil
-· USA
-· Germany
-· UK
+- India  
+- Brazil  
+- USA  
+- Germany  
+- UK  
 
-🔹 Strategy Insight:
-· India & Brazil → High volume, high engagement
-· Germany & UK → Lower volume, higher purchasing power
-👉 Separate strategies for high-volume vs high-value markets.
+**Strategy Insight:**
+- **India & Brazil:** High engagement volume  
+- **Germany & UK:** Higher purchasing power  
 
-⏰ Time & Seasonality Analysis
-· Hourly Trend: Engagement peaks in afternoon & evening (15–20 hrs)
-· Weekly Trend: Stable engagement across weeks
-· Calendar View: Spikes observed on 19–21 and 25–27, likely due to promotions or launches
-👉 Ads should be scheduled and budget-weighted toward peak hours and event-based days.
+Segmenting campaigns by **volume vs value markets** can improve ROI.
 
-🎥 Ad Format Performance
-Ad Type	                                                 Performance
-Video	                                           Best CTR, Conversion Rate & Engagement
-Stories	                                         Strong performance with high reach
-Image	                                           Moderate
-Carousel                                         Slightly lower conversions
-👉 Recommendation: Shift more budget toward Video & Story ads.
+---
 
-📊 Data Model & Architecture
-The dataset follows a star schema, similar to real Meta Ads platforms.
+## ⏰ Time & Seasonality Analysis
+- Engagement peaks during **afternoon and evening hours (15–20 hrs)**
+- Weekly engagement remains stable
+- Certain calendar days show spikes, likely driven by promotions or launches
 
-⭐ Fact Table
-ad_events
- · Stores impressions, clicks, engagements, purchases
- · Drives all KPI calculations
+**Recommendation:** Schedule and budget ads around peak engagement periods.
 
-📐 Dimension Tables
-ads
- · Ad platform, format, targeting details
-campaigns
- · Budget, duration, campaign metadata
-users
- · Demographics, age group, country, interests
+---
 
-🔗 Relationships:
- · ad_events → ads → campaigns
- · ad_events → users
+## 🎥 Ad Format Performance
+- **Video Ads:** Best-performing (highest CTR, engagement, and conversion rates)
+- **Stories Ads:** Strong reach and performance
+- **Image & Carousel Ads:** Moderate performance
 
-🛠 Tools & Technologies
- · Power BI – Dashboard creation & DAX
- · Power Query – Data transformation
- · Data Modeling – Star schema design
- · Marketing Analytics Concepts – Funnel analysis, ROI, segmentation
+**Recommendation:** Allocate more budget toward **Video and Stories** formats.
 
-💡 Key Insights & Recommendations
- 1. Strong top-of-funnel performance, weak conversion funnel
- 2. Target audience: Females, 18–30, primarily in India & Brazil
- 3. Best-performing formats: Video > Stories
- 4. Best engagement times: Afternoon & Evening
- 5. Improve landing pages, offers & retargeting to increase purchase rate
+---
 
-📁 Use Case
-This dashboard can be used by:
- · Marketing teams
- · Growth analysts
- · Performance marketers
- · Business stakeholders
-To:
- · Optimize ad spend
- · Improve conversion efficiency
- · Refine targeting strategies
- · Increase ROI
+## 📊 Data Model & Architecture
+The dashboard uses a **star schema data model**, aligned with industry standards.
 
- 
+### Fact Table
+**ad_events**
+- Captures impressions, clicks, engagements, and purchases
+- Foundation for all KPI calculations
+
+### Dimension Tables
+- **ads:** Platform, ad type, targeting details  
+- **campaigns:** Budget, duration, campaign metadata  
+- **users:** Demographics, age, location, interests  
+
+Relationships:
+- ad_events → ads → campaigns  
+- ad_events → users  
+
+---
+
+## 🛠 Tools & Technologies
+- Power BI  
+- Power Query  
+- DAX  
+- Data Modeling (Star Schema)  
+- Marketing & Funnel Analytics  
+
+---
+
+## 💡 Key Insights & Recommendations
+1. Strong top-of-funnel performance but weak conversion efficiency  
+2. Target audience: Females aged 18–30 in India & Brazil  
+3. Best-performing formats: Video > Stories  
+4. Best engagement times: Afternoon & Evening  
+5. Improve landing pages, retargeting strategies, and offers  
+
+---
+
+## 📁 Use Case
+This dashboard can support:
+- Marketing teams  
+- Growth analysts  
+- Performance marketers  
+- Business decision-makers  
+
+By enabling data-driven campaign optimization and budget allocation.
+
+---
+
+## 📌 Resume-Ready Statement
+> Built a Meta Ads Performance Dashboard in Power BI to analyze full-funnel marketing KPIs, audience demographics, geographic trends, ad formats, and time-based performance, delivering actionable insights to improve ROI.
+
+---
+
+## 📷 Dashboard Preview
+_Add screenshots of the Power BI dashboard here._
+
