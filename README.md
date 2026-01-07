@@ -155,13 +155,6 @@ This dashboard can support:
 
 By enabling data-driven campaign optimization and budget allocation.
 
----
-
-## 📌 Resume-Ready Statement
-> Built a Meta Ads Performance Dashboard in Power BI to analyze full-funnel marketing KPIs, audience demographics, geographic trends, ad formats, and time-based performance, delivering actionable insights to improve ROI.
-
----
-
 ## 📷 Dashboard Preview
-_Add screenshots of the Power BI dashboard here._
+[_](https://github.com/rgaur3534/Meta-Ad-Performance-Dashboard/blob/main/Snapshot%20of%20the%20Dashboard.png)
 
